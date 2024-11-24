@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Variáveis CSS globais */
+:root {
+  /* Variáveis de display */
+  --display-grid: grid;
+  --display-flex: flex;
+  /* Variável para coluna */
+  --direction-column: column;
+  /* Variável para centralizar elementos */
+  --centralizar-elemento: center;
+  /* Variável para alterar a propriedade padrão do box model */
+  --boder-box: border-box;
+  /* Variáveis para números */
+  --numero-zero: 0;
+  --numero-dezPx: 10px;
+  --numero-viteDoisPx: 22px;
+  --numero-umRem: 1rem;
+  /* Variáveis para cores */
+  --color-branco: #FFFFFF;
+  --cor-azul-magenta: #5905e0;
+  --cor-escura-magenta: #23003f;
+  --cor-cinzaMais-claro: #f1f0f1;
+  --cor-cinza-claro: #e0dede;
+  --cor-escura-azulMagenta: #030114;
+}
+
+/* Reset global da página */
+* {
+  margin: var(--numero-zero);
+  padding: var(--numero-zero);
+  box-sizing: var(--boder-box);
+}
+
+/* Estilizando o scroll da página */
+::-webkit-scrollbar {
+  width: var(--numero-dezPx);
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid var(--cor-azul-magenta);
+  padding: var(--numero-dezPx);
+  background-color: var(--cor-cinza-claro);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-escura-magenta);
+  border-radius: var(--numero-viteDoisPx);
+}
+
+/* Estilizando o body:
+   - Centralizando o conteúdo da página.
+   - Ajustando a largura máxima e altura mínima da página.
+   - Adicionando espaçamento interno. */
+body {
+  display: var(--display-grid);
+  place-content: var(--centralizar-elemento);
+  color: var(--cor-escura-azulMagenta);
+  background-color: var(--cor-cinzaMais-claro);
+  max-width: 100dvw;
+  min-height: 100dvh;
+  padding: var(--numero-umRem);
+}
+
+/* Estilizando o conteúdo principal:
+   - Centralizando o título e parágrafo.
+   - Adicionando cores de fundo, efeito de sombra na caixa.
+   - Adicionando borda da caixa com largura de 2px.
+   - Adicionando espaçamento interno da caixa.
+   - Adicionando fonte e tamanho de título e parágrafo. */
+main {
+  display: var(--display-flex);
+  flex-direction: var(--direction-column);
+  justify-content: var(--centralizar-elemento);
+  align-items: var(--centralizar-elemento);
+  gap: var(--numero-umRem);
+  background-color: var(--color-branco);
+  border: 2px solid var(--cor-escura-azulMagenta);
+  filter: drop-shadow(0px 0px 12px var(--cor-escura-magenta));
+  max-width: 768px;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+/* Estilizando títulos h1 e h2 */
+:is(h1, h2) {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Estilizando parágrafos e descrições */
+:is(p, dd) {
+  font-family: sans-serif;
+  line-height: 170%;
+  font-size: 1rem;
+}
+
+/* Estilizando termos de definição */
+dt {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: .8rem 0 0 0;
+}
+
+/* Estilizando descrições de definição */
+dd {
+  padding: .4rem .8rem;
+}
+
+/* Estilizando figuras */
+figure {
+  max-width: 577px;
+  min-width: 320px;
+}
+
+/* Estilizando imagens */
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Estilizando legendas de figuras */
+figcaption {
+  font-style: italic;
+}
+
+/* Estilizando o rodapé */
+footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  font-style: italic;
+}
+
+/* Estilizando links */
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #158ef1;
+}
+
+/* Estilizando ícones */
+i {
+  font-size: 20px;
+}
+
+/* Estilos para telas entre 320px e 374px de largura */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main {
+    width: 100%; /* Define a largura do elemento principal para 100% */
+    margin: auto; /* Centraliza o elemento principal */
+  }
+  h1 {
+    font-size: 1.1em; /* Define o tamanho da fonte do título h1 */
+    line-height: 150%; /* Define a altura da linha do título h1 */
+    text-align: center; /* Centraliza o texto do título h1 */
+  }
+  h2 {
+    text-align: center; /* Centraliza o texto do título h2 */
+  }
+  figure {
+    min-width: 100%; /* Define a largura mínima da figura para 100% */
+  }
+  img {
+    width: 90%; /* Define a largura da imagem para 90% */
+  }
+}
+
+/* Estilos para telas entre 375px e 424px de largura */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  h1, h2 {
+    text-align: center; /* Centraliza o texto dos títulos h1 e h2 */
+  }
+}
+
+/* Estilos para telas com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.3rem; /* Define o tamanho da fonte do título h1 */
+  }
+  h2 {
+    font-size: 1.5rem; /* Define o tamanho da fonte do título h2 */
+  }
+  dt {
+    font-size: 18px; /* Define o tamanho da fonte do termo de definição */
+  }
+  dd {
+    font-size: 15px; /* Define o tamanho da fonte da descrição da definição */
+  }
+  h1, h2 {
+    text-align: center; /* Centraliza o texto dos títulos h1 e h2 */
+  }
+}
