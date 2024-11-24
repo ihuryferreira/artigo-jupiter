@@ -1,10 +1,10 @@
 ## 🪐 Artigo Júpiter
 
-![GitHub repo size](https://img.shields.io/github/repo-size/ihuryferreira/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/ihuryferreira/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/ihuryferreira/README-template?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/ihuryferreira/README-template?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/ihuryferreira/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/ihuryferreira/artigo-jupiter?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/ihuryferreira/artigo-jupiter?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/ihuryferreira/artigo-jupiter?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/ihuryferreira/artigo-jupiter?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ihuryferreira/artigo-jupiter?style=for-the-badge)
 
 <img src="src/imagens/artigo.png" alt="Imagem ilustrativa do projeto">
 
